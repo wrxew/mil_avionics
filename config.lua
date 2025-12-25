@@ -11,3 +11,4 @@ Config.Bomb = {
     maxFallTime = 8.0,   -- segundos (muy alto)
     maxAltRef   = 3000.0 -- metros de referencia
 }
+
