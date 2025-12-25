@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TGP MFD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="mfd" class="hidden">
+
+    <!-- Frame 
+    <div class="frame"></div>-->
+
+    <!-- Top bar -->
+    <div class="top">
+      <span id="gain">17</span>
+      <span>CNTL</span>
+      <span class="boxed">A-G</span>
+      <span>STBY</span>
+      <span>A-A</span>
+      <span>CCD</span>
+    </div> 
+
+    <!-- Compass tape -->
+    <div class="compass">
+        <div class="tape" id="compassTape"></div>
+        <div class="caret">▲</div>
+    </div>
+  
+
+    <!-- Left -->
+    <div class="left">
+      <span>WIDE</span>
+      <span>M1</span>
+    </div>
+
+    <!-- Right -->
+    <div class="right">
+      <span id="lsr">LSR</span>
+      <span id="mode">LSS</span>
+    </div>
+
+    <!-- Target data -->
+    <div class="target-data" id="targetData">
+        <div id="tgtRng"></div>
+        <div id="tgtSpd"></div>
+        <div id="tgtAlt"></div>
+    </div>
+    
+    <div id="laserDot"></div>
+    <div id="laserRange">RNG ---</div>
+
+
+    <!-- Crosshair -->
+    <div class="crosshair">
+      <div class="h"></div>
+      <div class="v"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- Flight data near center -->
+    <div class="flight-data">
+        <div id="alt">ALT ---</div>
+        <div id="spd">SPD ---</div>
+        <div id="hdg">HDG ---</div>
+    </div>
+  
+
+
+    <!-- Center info -->
+    <div class="center-right" id="range">21M</div>
+
+    <!-- Bottom -->
+    <div class="bottom">
+      <span id="time">12:07:28</span>
+      <span>INR</span>
+      <span>LM</span>
+      <span id="zoom">6.6</span>
+    </div>
+
+    <!-- Coordinates -->
+    <div class="coords">
+      N42 16.047  E042 42.807
+    </div>
+
+    <!-- Soft keys -->
+    <div class="softkeys">
+      <span class="boxed">TGP</span>
+      <span>MAV</span>
+      <span>CDU</span>
+      <span>MSG</span>
+      <span>DCLT</span>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
